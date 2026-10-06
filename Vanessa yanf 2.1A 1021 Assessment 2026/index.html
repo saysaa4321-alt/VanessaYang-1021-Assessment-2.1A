@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<!-- Project 2.1 worked example (Bart Simpson) built on the Bootstrap 5.3 starter template for DESN1021, Web & Time Based Design. <div> tags should be replaced with semantic HTML tags where appropriate  [DESN1021-Pro2#1-7bddd3e6991c22bb4d3432b663b01bd5] DO NOT DELETE THIS COMMENT-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!--
+    ================= AI / SOURCE USE DECLARATION (DRAFT — COMPLETE THIS) =================
+    Per DESN1021 Project 2.1 Assessment Specifications, a summary declaration is
+    required at the top of EVERY file. Replace the bracketed placeholders below,
+    and add inline acknowledgements next to any AI/open-source snippet you use.
+    If you take the AI-assisted code animation option, that code must ALSO be
+    wrapped in inline start/end comments, and you must be able to explain it.
+
+    First name:       [Your First Name]
+    File:             index.html
+
+    Tool/Source:      [e.g. ChatGPT / Claude / GitHub Copilot / getbootstrap.com / none]
+    Used for:         [e.g. adapting the Bootstrap navbar / scrollspy behaviour]
+    Extent of use:    [e.g. small snippet suggested, then adapted by hand]
+    Date:             [DD Month 2026]
+
+    If no AI or open-source code was used in this file, replace the above with:
+    "No AI or open-source code was used in this file."
+
+    Declaration ref: DESN1021-Pro2.1-AIDECL#BART-index-b64b71aac6494fdf9ad0b84139e281e7
+    =====================================================================================
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- HTML title -->
+  <title>Vanessa's Portfolio planning</title>
+
+  <!-- Bootstrap style CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Google Fonts link - preconnect ONCE, then request all your families in a single css2 link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Kenia&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Content goes here -->
+
+  <!-- nav starts -->
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="mynavbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#homeheader">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#statement">Statement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#storyboard">Storyboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#precedent">Precedent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sitemap">Sitemap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sketches">Sketches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#wireframes">Wireframes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#screens">Screen Designs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- nav finished -->
+
+  <!-- Scrollspy - Start  Source: https://getbootstrap.com/docs/5.3/components/scrollspy/-->
+  <div data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+    tabindex="0">
+
+    <!-- header /banner starts-->
+
+    <!-- Shadow class is used to create a drop shadow  https://getbootstrap.com/docs/5.3/utilities/shadows/#examples -->
+    <header class="shadow-lg">
+      <div class="container-fluid py-5 banner">
+        <div class="row">
+          <div class="col">
+            <p class="text-center display-6 text-dark banner-text">
+              Vanessa's Portfolio plan
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header / banner finished -->
+
+    <!-- Intro section -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-6">
+            <img src="img/Thinking Cat.png" class="img-fluid rounded" alt="THinking catphoto">
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <h2 id="statement">Project Statement</h2>
+
+            <h3 class="h4 mt-3">Intent</h3>
+            <p>
+              This is a pitch and organised compilation of what will be included in the website I am building. The website portfolio aims to reflect my vibrant visual style and creative process as an artist. 
+            </p>
+            <h3 class="h4 mt-3">Audience</h3>
+            <p>
+              The website will be catered towards illustration and design companies as well as freelancing hires.
+            </p>
+            <h3 class="h4 mt-3">Tone</h3>
+            <p>
+              I intend my portfolio to emotionally attract its viewers through conveying a balance of bright and carefree atmosphere with an underlying safe and soft feel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Intro -->
+
+    <!-- Story boarding starts -->
+    <section>
+      <div class="container py-5 border-top border-success">
+        <div class="row">
+          <div class="col-12">
+  <h2 class="display-5" id="storyboard">Storyboard</h2>
+          </div>
+          <div class="col-12 col-md-8">
+            <!-- Image that triggers the Modal -->
+            <img src="img/Storyboard.png" class="img-fluid" alt="Four Seasons Storyboard"
+              data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+          </div>
+                    <div class="col-12 col-md-8">
+            <!-- Image that triggers the Modal -->
+            <img src="img/IMG_5006.PNG" class="img-fluid" alt="Four Seasons Storyboard"
+              data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor: pointer;">
+          </div>
+          <div class="col-12 col-md-4 text-white">
+            <h3 class="h4">About</h3>
+            <p>
+              Depicting the same location through four seasons allows me to showcase the range and versatility in my artistic skillset. The environment remains consistent but each season presents a different visual challenge and opportunities where I highlight how subtle changes can transform the atmosphere conveyed by an art piece. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal structure starts here -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header with Close Button -->
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="imageModalLabel">Four Seasons Storyboard</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal Body where the image is displayed -->
+          <div class="modal-body text-center">
+            <img src="img/Storyboard.png" class="img-fluid" alt="Four Seasons Storyboard">
+            <!-- Caption under the image -->
+            <p class="mt-3">This is the storyboard for the Four Seasons animation.</p>
+          </div>
+          <!-- Modal Footer with Close Button -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of story board -->
+
+    <!-- Case Study Starts -->
+    <section class="py-4">
+      <div class="container py-5">
+        <h2 class="fs-3 mb-4" id="precedent">Analysis of Precedent Portfolio</h2>
+        <!-- first row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+              <img src="img/Screenshot 2026-10-06 at 3.13.59 pm.png" class="img-fluid" alt="Yukaidu home Page">
+              <img src="img/Screenshot 2026-10-06 at 3.14.05 pm.png" class="img-fluid" alt="Yukaidu Illustration Page">
+              <img src="img/Screenshot 2026-10-06 at 3.14.13 pm.png" class="img-fluid" alt="Yukaidu Illustration Page">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h3 class="display-5 pb-3">
+              <a class="text-decoration-none" href="https://www.yukaidu.com/">Yukaidu</a>
+            </h3>
+            <p class="lead">
+          The website’s visual style is dominated by the colourful and adventurous atmosphere through the art works and design shown, which contrasts the clean and contemporary composition of the website. It is really effective in making the website visually pleasing and balanced for its users.
+            </p>
+            <h4 class="h3">Best Aspects</h4>
+            <!-- Accordian from Bootstrap https://getbootstrap.com/docs/5.3/components/accordion/#how-it-works -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Inspiration Points 
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>There is an animation to present the artist’s name</li>
+                      <li>her works are presented in a way which makes the site feel cohesive colour wise</li>
+                      <li>Very clean and not afraid of leaving empty space. Allows attention to be focused on the works</li>
+                      <li>Good use of columns and grid layout within the images and body texts</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Colour Palette
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+From my observation the site primarily uses warmer colours such as warm whites, pale pinks, darker pinks, and darker oranges. The lighter colours are used for the backgrounds and the darker colours are used for elements that need to standout or headings.  
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Typography
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+The site only utilises two type faces. The typefaces used also enhance the contemporary feel. <br>
+<strong> Body Text : </strong>San-serif fonts are used likely due to its simplicity and usability. Emphasised parts in the body text are shown through being bolded. <br>
+<strong> Headings and Quotes : </strong> Are all in a serif font, however ranges in size accordingly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second row -->
+  </div>
+    </section>
+
+    <!-- End of case study -->
+
+    <!-- Sitemap starts -->
+    <section class="py-4 bg-body-tertiary">
+      <div class="container py-5">
+        <h2 class="display-5 mb-3" id="sitemap">Sitemap</h2>
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <img src="img/Screenshot 2026-10-06 at 3.18.43 pm.png" class="img-fluid rounded" alt="Sitemap">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of sitemap -->
+
+    <!-- Sketch starts -->
+    <section class="py-4">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12">
+  <h2 class="display-5" id="sketches">Sketches</h2>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.11.03 pm.png" class="img-fluid" alt="Index page sketch">
+            <h3 class="h4 pt-2">Landing/Home page</h3>
+          </div>
+           <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.10.35 pm.png" class="img-fluid" alt="Index page sketch">
+            <h3 class="h4 pt-2">Project page</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.10.13 pm.png" class="img-fluid" alt="Portfolio page sketch">
+            <h3 class="h4 pt-2">Illustration page</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.09.49 pm.png" class="img-fluid" alt="Contact page sketch">
+            <h3 class="h4 pt-2">Design page</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.10.52 pm.png" class="img-fluid" alt="Contact page sketch">
+            <h3 class="h4 pt-2">Contact page</h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/Screenshot 2026-10-06 at 3.09.49 pm.png" class="img-fluid" alt="Contact page sketch">
+            <h3 class="h4 pt-2">About page</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Sketch -->
+
+    <!-- Wireframing start -->
+    <section class="py-4 custom-bg-yellow">
+      <div class="container py-5">
+        <h2 class="display-5 custom-text-red mb-3" id="wireframes">Wireframes</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 1.png"
+              alt="Wireframe of the landing page">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 2.png"
+              alt="Wireframe of the illustration page">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 3.png"
+              alt="Wireframe of the more illustration page">
+          </div>
+                    <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 4.png"
+              alt="Wireframe of the design page">
+          </div>
+                    <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 5.png"
+              alt="Wireframe of the more design page">
+          </div>
+                    <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 6.png"
+              alt="Wireframe of the about page">
+          </div>
+                    <div class="col-12 col-md-4">
+            <img class="img-fluid" src="img/Wireframe 7.png"
+              alt="Wireframe of the contacts page">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of wireframing -->
+
+    <!-- Final look and feel  -->
+    <!-- Bootstrap Carousel :  -->
+    <!-- End of final look and feel -->
+    <!-- carousel start -->
+    <section class="py-4">
+      <div class="container py-5">
+        <h2 class="display-5 mb-3" id="screens">Screen Designs</h2>
+        <div class="row">
+          <!-- This is an automatic carousel, so it will slide automatically. this happens only for this data-bs-ride="carousel" -->
+
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Screenshot 2026-10-06 at 4.38.27 pm.png" class="d-block w-100" alt="carousel image 1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel ends -->
+        </div>
+      </div>
+    </section>
+    <!-- End of Carousel -->
+
+    <!-- cards start here -->
+
+ 
+
+    <!-- footer starts here-->
+
+    <footer class="pt-5">
+      <div class="container-fluid py-5 bg-dark text-white">
+        <div class="row text-center">
+          <div class="col">
+            <p class="h4">Vanessa's Web and Time Based Design Plan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends here-->
+
+  </div>
+  <!-- Scrolspy - End -->
+
+  <!-- =================No Content below here========================= -->
+  <!-- Bootstrap JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- End of Bootstrap script -->
+</body>
+
+</html>
+<!-- End of HTML [DESN1021-Pro2#1-7bddd3e6991c22bb4d3432b663b01bd5]-->
+
+<!-- END AI / SOURCE USE DECLARATION — nothing to fill in here; the completed declaration goes in the top comment. Do not delete.
+     Declaration ref: DESN1021-Pro2.1-AIDECL#BART-index-b64b71aac6494fdf9ad0b84139e281e7 -->
